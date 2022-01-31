@@ -1,0 +1,97 @@
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+.sombra{position: relative;}
+
+.sombra::after{position: absolute;
+                top: 0px;
+                left: 0px;
+                content: ' ';
+                background: rgb(136, 136, 136);
+                width: 100%;
+                height: 100%;
+                filter:blur(5px);
+                /* border-radius: 6%; */
+                z-index: -1;}         
+
+
+.imagenFondo{background-image: url("http://localhost/tienda-musi/componentes/img/fondo_gitarra.jpg");}  
+
+
+.botonNotifica{position: relative;}
+
+.botonNotifica::after{position: absolute;
+                        /* top: 0px;
+                        left: 0px; */
+                        content: ' ';
+                        background-color: orangered; 
+                        width: 20px; 
+                        height: 20px; 
+                        border-radius: 10px;
+                        color: white; 
+                        text-align: center; 
+                        font-size: 14px;
+                        /* border-radius: 6%; */
+                        z-index: 1;}   
+  
+
+.encabezados{
+    font-size: 30px;
+}                        
+
+.reproductor{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+@media (max-width: 540px){
+    body{
+        font-size: 12px;
+    }
+    .encabezados{
+        font-size: 15px;
+    }
+
+
+   /* .reproductor{
+       display: none;
+   } */
+
+   #botonesAdminMusi{
+       display: block;
+       margin-top: 5px;
+   }
+
+
+   .containerModal{
+       padding: 0px;
+   }
+
+
+   .encabezNavega{
+       display: none;
+   }
+
+
+
+
+   .responUlNav{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+   }
+
+
+   .carousel-indicators{
+       margin-bottom: 0px;
+   }
+
+}  
+
+
+

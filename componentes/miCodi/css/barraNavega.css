@@ -1,0 +1,14 @@
+/* subir el icono de configuraciones */
+@media screen and (max-width: 480px)
+{
+    .subirBtn {
+        margin-top: 8px;
+    }
+}
+
+@media screen and (min-width: 480px)
+{
+    .subirBtn {
+        margin-top: 8px;
+    }
+}
